@@ -1,0 +1,33 @@
+/** main **/
+main {
+  flex-grow: 1;
+  order:40;
+  background:#fff;
+  padding:1rem;
+  font-size:1.5rem;
+  h2 {
+    font-size:3rem;
+    padding-bottom:1rem;
+    padding-top:1rem;
+    border-bottom:2px solid #000;
+  }
+  h3 {
+    font-size:2rem;
+    padding-bottom:1rem;
+    padding-top:1rem;
+  }
+  ul {
+    margin-left:1rem;
+  }
+  button {
+    font-size:1.5rem;
+    padding:1rem 2rem;
+    border:0;
+    border-radius:1rem;
+    background:$highlightColor;
+    box-shadow:0 0 0 0 rgba(0,0,0,.5);
+    &:focus {
+      outline:none;
+    }
+  }
+}

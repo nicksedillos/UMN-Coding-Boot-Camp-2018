@@ -1,0 +1,30 @@
+/** base **/
+*{
+  box-sizing:border-box;
+}
+html {
+  font-size:14px;
+  font-family:$font-stack;
+}
+body {
+  margin:0;
+  background:#f9f9f9;
+}
+#app {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a[href^="http"]:not([href*="anything.com"])::after{
+  content:"\2197";
+}
+
+code {
+  display:block;
+  white-space:pre;
+  font-family:monospace;
+  padding:1rem;
+  background:#ddd;
+  margin:0 0 1rem 0;
+  box-shadow:0 .5rem .5rem 0 rgba(0,0,0,.5);
+}

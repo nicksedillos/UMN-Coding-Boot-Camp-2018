@@ -1,0 +1,143 @@
+/*animations page*/
+
+@keyframes spin {
+  from {
+    transform:rotate(0)
+  }
+  to {
+    transform:rotate(360deg)
+  }
+
+}
+@keyframes loadBar {
+  0% {left:0}
+  50% {left:0%;width:100%;margin-left:0;}
+  100% {left:100%;margin-left:-2rem;}
+}
+@keyframes doButton {
+  0% {
+    width:20rem;
+    height:5rem;
+    border-radius:1rem;
+    background:$highlightColor;
+    box-shadow:0 0 0 0 rgba(0,0,0,.5);
+  }
+  50% {
+    width:35rem;
+    height:2rem;
+    font-size:1rem;
+  }
+  100% {
+    background:lighten($highlightColor, 20%);
+    width:30rem;
+    height:7rem;
+    font-size:2rem;
+    box-shadow:0 .5rem 1.5rem 0 rgba(0,0,0,.5);
+  }
+}
+
+
+
+main.animationsPage {
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  flex-direction: column;
+
+  /*loading-spinner */
+  .loading-spinner {
+    height:10rem;
+    width:10rem;
+    background:#fff;
+    border-radius:5rem;
+    position:relative;
+    box-shadow: 0 .1rem .25rem 0 rgba(0,0,0,.5),
+                inset 0 .1rem .25rem 0 rgba(0,0,0,.5);
+  }
+  .loading-spinner div {
+    content:'';
+    background:$highlightColor;
+    position:absolute;
+    top:0 ;
+    left:50%;
+    width:2rem;
+    height:2rem;
+    margin-top:-1rem ;
+    margin-left:-1rem;
+    border-radius:50%;
+    box-shadow:inset 0 0 .25rem 0 rgba(0,0,0,.5);
+    transform-origin:1rem 6rem;
+    transform:rotate(0deg);
+    animation:spin 1s infinite linear;
+  }
+  .loading-spinner div:nth-child(2){
+    animation-delay:.2s;
+  }
+  .loading-spinner div:nth-child(3){
+    animation-delay:.4s;
+  }
+  .loading-spinner div:nth-child(4){
+    animation-delay:.6s;
+  }
+  .loading-spinner div:nth-child(5){
+    animation-delay:.8s;
+  }
+
+
+  /*loading-bar*/
+  .loading-bar {
+    margin:2rem 0;
+    height:2rem;
+    width:20rem;
+    background:#ddd;
+    position:relative;
+    border-radius:1rem;
+    box-shadow:inset 0 .1rem .25rem 0 rgba(0,0,0,.5);
+  }
+  .loading-bar:before {
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    width:2rem;
+    height:2rem;
+    background:$highlightColor;
+    border-radius:1rem;
+    box-shadow:inset 0 -.1rem .25rem 0 rgba(0,0,0,.5);
+    animation:loadBar 2s linear infinite;
+    animation-direction: alternate;
+  }
+
+
+
+
+
+  /*animating button*/
+  button {
+    border:0;
+    width:20rem;
+    height:5rem;
+    border-radius:1rem;
+    background:$highlightColor;
+    box-shadow:0 0 0 0 rgba(0,0,0,.5);
+  }
+  button.active {
+    background:lighten($highlightColor, 20%);
+    width:30rem;
+    height:7rem;
+    font-size:2rem;
+    box-shadow:0 .5rem 1.5rem 0 rgba(0,0,0,.5);
+
+  }
+
+  button.hasAnimation{
+    animation:doButton 1s;
+    animation-direction: reverse;
+  }
+  button.hasAnimation.active{
+    animation-direction: normal;
+  }
+  button:focus{
+    outline:0;
+  }
+}

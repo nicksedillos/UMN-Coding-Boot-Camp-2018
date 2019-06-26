@@ -1,0 +1,27 @@
+{
+  "name": "hot-restaurant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node scripts/start",
+    "start:dev": "nodemon scripts/start",
+    "start:debug": "node --inspect-brk scripts/start",
+    "test": "jest --coverage --env=node",
+    "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand --env=node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.3"
+  }
+}

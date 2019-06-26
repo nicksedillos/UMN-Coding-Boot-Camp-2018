@@ -1,0 +1,23 @@
+/** aside **/
+aside {
+  flex-shrink: 1;
+  order:45;
+  background: #f9f9f9;
+  padding:1rem;
+  box-shadow: 0 0 0 1px #999;
+}
+aside img {
+  width:100%;
+  max-width:12rem;
+}
+aside ul {
+  padding:1rem 0 1rem 1.5rem;
+  max-width:12rem;
+}
+aside ul li {
+  max-width:100%;
+  list-style-type:disc;
+}
+aside ul li+li {
+  margin-top:.5rem
+}
