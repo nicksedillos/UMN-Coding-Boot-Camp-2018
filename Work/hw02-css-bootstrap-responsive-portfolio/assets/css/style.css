@@ -1,0 +1,265 @@
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+}
+
+body {
+	color: #777777;
+	background-image: url(../images/memphis-colorful.png);
+}
+
+h1 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	padding: 30px;
+	font-size: 2em;
+	font-weight: bold;
+	float: left;
+}
+
+h1 a, h1 a:active, h1 a:focus, h1 a:hover {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+h2 {
+	color: #4aaaa5;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	padding: 30px 30px 0 30px;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+p {
+	margin: 30px;
+	line-height: 2em;
+}
+
+img {
+	margin: 0 30px 30px 30px;
+}
+
+img.wrapleft {
+	float: left;
+	margin: 0 30px 0 30px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 40px 0 0 0;
+}
+
+li {
+	display: inline;
+}
+
+li+li:before {
+  content: '\2003|\2003';
+  white-space: pre;
+}
+
+hr {
+	background-color: #dddddd;
+	width: 95%;
+	height: 2px;
+	border: 0px;
+	margin: 30px auto 30px auto;
+}
+
+header {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #ffffff;
+	border-bottom: 2px solid #dddddd;
+}
+
+nav {
+	float: right;
+}
+
+nav a {
+	color: #777777;
+	text-decoration: none;
+}
+
+main {
+	background-image: url("../images/memphis-colorful.png");
+	overflow: hidden;
+	width: 960px;
+	margin: 30px auto;
+	border: 1px solid #dddddd;
+}
+
+article {
+	background-color: #ffffff;
+	overflow: hidden;
+	line-height: 2em;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background-color: #666666;
+	color: #ffffff;
+	font-size: 0.8em;
+	border-top: 4px solid #4aaaa5;
+}
+
+footer p {
+	margin: 30px 1em 0.5em 1em;
+}
+
+footer a {
+	color: #ffffff;
+}
+
+input {
+	margin: 0 30px 30px 30px;
+	width: 900px; height: 2em;
+	border: 1px solid #dddddd;
+	color: #777777;
+	padding: 0.5em;
+}
+
+button {
+	margin: 0 30px 30px 30px;
+	border: none;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	padding: 0.5em 1em 0.5em 1em;
+	font-size: 1em;
+}
+
+form p {
+	margin: 0 30px 0 30px;
+}
+
+.container {
+	position: relative;
+	width: 275px;
+	height: 200px;
+	margin: 0 0 30px 0;
+}
+
+.container h3 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	position: absolute;
+	text-align: center;
+	bottom: 10px;
+	left: 30px;
+	width: 275px;
+	margin: 0 auto 0 auto;
+	background-color: #4aaaa5;
+	padding: 0.5em 0 0.5em 0;
+	color: #ffffff;
+	font-size: 1.4em;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.clearfix:after {
+	content: " "; /* Older browser do not support empty content */
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+ } 
+
+/* Media queries */
+
+@viewport {
+	width: device-width;
+}
+
+@media screen and (max-width: 980px) {
+	main {
+		width: 66%;
+		margin: 30px;
+	}
+
+	h1 {
+		margin: 0 30px;
+	}
+
+	form p {
+		margin: 0 1em;
+	}
+
+	input {
+		box-sizing: border-box;
+		width: 95%;
+		margin: 0.2em 1em 1em 1em;
+		padding: 0.2em;
+	}
+
+	button {
+		margin: 0 1em 1em 1em;
+	}
+
+	nav {
+		margin: 0 30px;
+	}
+
+	.wrapper {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	main {
+		width: 708px;
+		margin: 30px auto;
+	}
+
+	nav {
+		margin: 0 30px;
+	}
+
+	.wrapper {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	header {
+		text-align: center;
+	}	
+	
+	h1, h1 a, nav {
+		display: block;
+		float: none;
+		margin: 0 auto 0 auto;
+		width: 100%;
+		padding: 0;
+	}
+
+	h1 {
+		padding: 0.2em 0;
+	}
+
+	main {
+		width: 95%;
+		margin: 1em auto;
+	}
+
+	img.wrapleft {
+		margin: 0 auto;
+		display: block;
+		float: none;
+	}
+	
+	ul {margin: 0.5em 0;}
+
+	.wrapper {
+		width: 100%;
+	}
+ }

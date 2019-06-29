@@ -1,0 +1,12 @@
+body {
+	text-align: center;
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+button {
+	margin: 0.5em;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<!-- <script src="surveySubmission.js" defer></script> -->
+	<link href="../../reset.css" ref="stylesheet">
+	<title>Survey | Friend Finder</title>
+</head>
+<body>
+	<header>
+		<h1>Friend Finder</h1>
+		<nav><a href=".">Home</a> | <a href="/survey">Survey</a> | <a href="/api/friends">API</a></nav>
+	</header>
+	<h2>Survey</h2>
+	<form id="survey">
+		<fieldset>
+			<legend>Introduce Yourself</legend>
+			<label>What is your name?</label><br>
+			<input type="text" id="userName" name="userName" size="100"><br>
+			<label>Please provide a link to a photo of yourself.</label><br>
+			<input type="url" id="userPhotoURL" name="userPhotoURL" size="100">
+		</fieldset>
+		<fieldset>
+			<legend>The Friend Finder Type Indicator Personality Inventory (FFTIPI)®</legend>
+			<p>
+				Rate how strongly you agree with the following statements on a scale of one to five, one meaning "strongly disagree" and five meaning "strongly agree."
+			</p>
+			<ol>
+				<li>
+					<label>I enjoy long walks on the beach, alone, at midnight.</label><br>
+					<input type="radio" id="surveyResponse1A" name="surveyResponse1" value="1"><label for="surveyResponse1A">1</label>
+					<input type="radio" id="surveyResponse1B" name="surveyResponse1" value="2"><label for="surveyResponse1B">2</label>
+					<input type="radio" id="surveyResponse1C" name="surveyResponse1" value="3"><label for="surveyResponse1C">3</label>
+					<input type="radio" id="surveyResponse1D" name="surveyResponse1" value="4"><label for="surveyResponse1D">4</label>
+					<input type="radio" id="surveyResponse1E" name="surveyResponse1" value="5"><label for="surveyResponse1E">5</label>
+				</li>
+				<li>
+					<label>If I noticed an open hatch in the sky with an enormous eye peeking through it, I would attempt to wave at that eye before the hatch shut.</label><br>
+					<input type="radio" id="surveyResponse2A" name="surveyResponse2" value="1"><label for="surveyResponse2A">1</label>
+					<input type="radio" id="surveyResponse2B" name="surveyResponse2" value="2"><label for="surveyResponse2B">2</label>
+					<input type="radio" id="surveyResponse2C" name="surveyResponse2" value="3"><label for="surveyResponse2C">3</label>
+					<input type="radio" id="surveyResponse2D" name="surveyResponse2" value="4"><label for="surveyResponse2D">4</label>
+					<input type="radio" id="surveyResponse2E" name="surveyResponse2" value="5"><label for="surveyResponse2E">5</label>
+				</li>
+				<li>
+					<label>I would allow my friends and family to watch a recording of my worst crimes, provided that I could also see theirs.</label><br>
+					<input type="radio" id="surveyResponse3A" name="surveyResponse3" value="1"><label for="surveyResponse3A">1</label>
+					<input type="radio" id="surveyResponse3B" name="surveyResponse3" value="2"><label for="surveyResponse3B">2</label>
+					<input type="radio" id="surveyResponse3C" name="surveyResponse3" value="3"><label for="surveyResponse3C">3</label>
+					<input type="radio" id="surveyResponse3D" name="surveyResponse3" value="4"><label for="surveyResponse3D">4</label>
+					<input type="radio" id="surveyResponse3E" name="surveyResponse3" value="5"><label for="surveyResponse3E">5</label>
+				</li>
+				<li>
+					<label>There is no secret or higher power in the universe.</label><br>
+					<input type="radio" id="surveyResponse4A" name="surveyResponse4" value="1"><label for="surveyResponse4A">1</label>
+					<input type="radio" id="surveyResponse4B" name="surveyResponse4" value="2"><label for="surveyResponse4B">2</label>
+					<input type="radio" id="surveyResponse4C" name="surveyResponse4" value="3"><label for="surveyResponse4C">3</label>
+					<input type="radio" id="surveyResponse4D" name="surveyResponse4" value="4"><label for="surveyResponse4D">4</label>
+					<input type="radio" id="surveyResponse4E" name="surveyResponse4" value="5"><label for="surveyResponse4E">5</label>
+				</li>
+				<li>
+					<label>I prefer the taste of blood to the smell of gasoline.</label><br>
+					<input type="radio" id="surveyResponse5A" name="surveyResponse5" value="1"><label for="surveyResponse5A">1</label>
+					<input type="radio" id="surveyResponse5B" name="surveyResponse5" value="2"><label for="surveyResponse5B">2</label>
+					<input type="radio" id="surveyResponse5C" name="surveyResponse5" value="3"><label for="surveyResponse5C">3</label>
+					<input type="radio" id="surveyResponse5D" name="surveyResponse5" value="4"><label for="surveyResponse5D">4</label>
+					<input type="radio" id="surveyResponse5E" name="surveyResponse5" value="5"><label for="surveyResponse5E">5</label>
+				</li>
+				<li>
+					<label>I would never leave a party without saying goodbye to the hosts.</label><br>
+					<input type="radio" id="surveyResponse6A" name="surveyResponse6" value="1"><label for="surveyResponse6A">1</label>
+					<input type="radio" id="surveyResponse6B" name="surveyResponse6" value="2"><label for="surveyResponse6B">2</label>
+					<input type="radio" id="surveyResponse6C" name="surveyResponse6" value="3"><label for="surveyResponse6C">3</label>
+					<input type="radio" id="surveyResponse6D" name="surveyResponse6" value="4"><label for="surveyResponse6D">4</label>
+					<input type="radio" id="surveyResponse6E" name="surveyResponse6" value="5"><label for="surveyResponse6E">5</label>
+				</li>
+				<li>
+					<label>Popular music, as a whole, was better twenty years ago.</label><br>
+					<input type="radio" id="surveyResponse7A" name="surveyResponse7" value="1"><label for="surveyResponse7A">1</label>
+					<input type="radio" id="surveyResponse7B" name="surveyResponse7" value="2"><label for="surveyResponse7B">2</label>
+					<input type="radio" id="surveyResponse7C" name="surveyResponse7" value="3"><label for="surveyResponse7C">3</label>
+					<input type="radio" id="surveyResponse7D" name="surveyResponse7" value="4"><label for="surveyResponse7D">4</label>
+					<input type="radio" id="surveyResponse7E" name="surveyResponse7" value="5"><label for="surveyResponse7E">5</label>
+				</li>
+				<li>
+					<label>I fantastize about living in a time with different social mores.</label><br>
+					<input type="radio" id="surveyResponse8A" name="surveyResponse8" value="1"><label for="surveyResponse8A">1</label>
+					<input type="radio" id="surveyResponse8B" name="surveyResponse8" value="2"><label for="surveyResponse8B">2</label>
+					<input type="radio" id="surveyResponse8C" name="surveyResponse8" value="3"><label for="surveyResponse8C">3</label>
+					<input type="radio" id="surveyResponse8D" name="surveyResponse8" value="4"><label for="surveyResponse8D">4</label>
+					<input type="radio" id="surveyResponse8E" name="surveyResponse8" value="5"><label for="surveyResponse8E">5</label>
+				</li>
+				<li>
+					<label>My nightmares are sometimes completely abstract, or involve incomprehensible flashing colors and symbols.</label><br>
+					<input type="radio" id="surveyResponse9A" name="surveyResponse9" value="1"><label for="surveyResponse9A">1</label>
+					<input type="radio" id="surveyResponse9B" name="surveyResponse9" value="2"><label for="surveyResponse9B">2</label>
+					<input type="radio" id="surveyResponse9C" name="surveyResponse9" value="3"><label for="surveyResponse9C">3</label>
+					<input type="radio" id="surveyResponse9D" name="surveyResponse9" value="4"><label for="surveyResponse9D">4</label>
+					<input type="radio" id="surveyResponse9E" name="surveyResponse9" value="5"><label for="surveyResponse9E">5</label>
+				</li>
+				<li>
+					<label>I have purposefully lied in my response to one or more of these questions.</label><br>
+					<input type="radio" id="surveyResponse10A" name="surveyResponse10" value="1"><label for="surveyResponse10A">1</label>
+					<input type="radio" id="surveyResponse10B" name="surveyResponse10" value="2"><label for="surveyResponse10B">2</label>
+					<input type="radio" id="surveyResponse10C" name="surveyResponse10" value="3"><label for="surveyResponse10C">3</label>
+					<input type="radio" id="surveyResponse10D" name="surveyResponse10" value="4"><label for="surveyResponse10D">4</label>
+					<input type="radio" id="surveyResponse10E" name="surveyResponse10" value="5"><label for="surveyResponse10E">5</label>
+				</li>
+			</ol>
+		</fieldset>
+	</form>
+	<button type="submit" form="survey" name="submitButton" id="submitButton">Submit</button>
+	<script>
+		$("#survey").submit(function(){
+    		event.preventDefault();
+			console.log("Click!");
+			var newFriend = {
+				name: $("#userName").val().trim(),
+				photo: $("#userPhotoURL").val().trim(),
+				scores: [
+					$("input[type=radio][name=surveyResponse1]:checked").val(),
+					$("input[type=radio][name=surveyResponse2]:checked").val(),
+					$("input[type=radio][name=surveyResponse3]:checked").val(),
+					$("input[type=radio][name=surveyResponse4]:checked").val(),
+					$("input[type=radio][name=surveyResponse5]:checked").val(),
+					$("input[type=radio][name=surveyResponse6]:checked").val(),
+					$("input[type=radio][name=surveyResponse7]:checked").val(),
+					$("input[type=radio][name=surveyResponse8]:checked").val(),
+					$("input[type=radio][name=surveyResponse9]:checked").val(),
+					$("input[type=radio][name=surveyResponse10]:checked").val()
+				]
+			};
+			console.log(newFriend);
+			$.post("../api/friends", newFriend);
+		});
+	</script>
+</body>
+</html>

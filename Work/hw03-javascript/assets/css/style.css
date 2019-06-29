@@ -1,0 +1,17 @@
+body {
+	background-color: #cceebb;
+	color: #666644;
+	font-family: 'Caveat Brush', cursive;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2.5em;
+	border: dotted;
+}
+
+p {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 0.2em 0;
+}

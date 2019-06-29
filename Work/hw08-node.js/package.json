@@ -1,0 +1,26 @@
+{
+  "name": "hw08-node.js",
+  "version": "1.0.0",
+  "description": "For the University of Minnesota Full Stack Web Development Coding Boot Camp, September 2018.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicksedillos/hw08-node.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicksedillos/hw08-node.js/issues"
+  },
+  "homepage": "https://github.com/nicksedillos/hw08-node.js#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "moment": "^2.22.2",
+    "node-spotify-api": "^1.0.7",
+    "request": "^2.88.0"
+  }
+}
