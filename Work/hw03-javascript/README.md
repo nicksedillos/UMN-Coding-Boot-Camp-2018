@@ -2,8 +2,8 @@
 
 A project made for the University of Minnesota Full Stack Web Development Coding Boot Camp, July 2018.
 
-* GitHub repository: https://github.com/nicksedillos/hw03-javascript
-* Deployment: https://nicksedillos.github.io/hw03-javascript/
+* GitHub repository: https://github.com/nicksedillos/UMN-Coding-Boot-Camp-2018/tree/master/Work/hw03-javascript
+* Deployment: https://nicksedillos.github.io/UMN-Coding-Boot-Camp-2018/Work/hw03-javascript/
 
 ## Project requirements
 

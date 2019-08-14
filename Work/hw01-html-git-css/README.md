@@ -1,7 +1,7 @@
 # Homework #1: HTML/Git/CSS—“Basic Portfolio”
 
-* GitHub repository: https://github.com/nicksedillos/hw01-html-git-css
-* Deployment: https://nicksedillos.github.io/hw01-html-git-css/
+* GitHub repository: https://github.com/nicksedillos/UMN-Coding-Boot-Camp-2018/tree/master/Work/hw01-html-git-css
+* Deployment: https://nicksedillos.github.io/UMN-Coding-Boot-Camp-2018/Work/hw01-html-git-css/
 
 A project for the University of Minnesota Full Stack Web Development Coding Boot Camp, July 2018.
 

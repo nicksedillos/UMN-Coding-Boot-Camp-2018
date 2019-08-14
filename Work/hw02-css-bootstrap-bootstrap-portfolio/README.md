@@ -2,8 +2,8 @@
 
 A project for the University of Minnesota Full Stack Web Development Coding Boot Camp, July 2018.
 
-* GitHub repository: https://github.com/nicksedillos/hw02-css-bootstrap-bootstrap-portfolio
-* Deployment: https://nicksedillos.github.io/hw02-css-bootstrap-bootstrap-portfolio/
+* GitHub repository: https://github.com/nicksedillos/UMN-Coding-Boot-Camp-2018/tree/master/Work/hw02-css-bootstrap-bootstrap-portfolio
+* Deployment: https://nicksedillos.github.io/UMN-Coding-Boot-Camp-2018/Work/hw02-css-bootstrap-bootstrap-portfolio/
 
 ## Project requirements
 
