@@ -4,7 +4,7 @@ By [Michael Cumings](https://github.com/michaelcumings), [Sadiya Jiru](https://g
 
 For the University of Minnesota Full Stack Web Development Coding Boot Camp, December 2018.
 
-- Repository: https://github.com/nicksedillos/peek
+- GitHub repository: https://github.com/nicksedillos/UMN-Coding-Boot-Camp-2018/tree/master/Work/project-3
 - Deployment: https://peek-2fb5b.firebaseapp.com
 
 ## Overview
